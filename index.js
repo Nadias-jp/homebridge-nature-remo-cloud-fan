@@ -103,7 +103,7 @@ FanAccessory.prototype.setFanState = function(state, callback) {
   let signal_ID;
   if (state.power) {
     if      (state.speed == 33) {
-      signal_ID = this.middle_signal_ID;
+      signal_ID = this.low_signal_ID;
       if      (this.language == 'en') {
         this.log(' <<<< [Power: ' + state.power + ']  [FANSpeed: LOW(' + state.speed + '%)]');
       }
